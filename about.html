@@ -10,98 +10,68 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   
+    
+
+
     <a href="about.html"></a>
-    <a href="index.html"></a>
-    <a href="myservices.html"></a>
-    <a href="contact.html"></a>
-    <a href="submit.html"></a>
+<a href="index.html"></a>
+<a href="myservices.html"></a>
+<a href="contact.html"></a>
+<a href="submit.html"></a>
+
 </head>
 <body>
-   
-<!-- header section starts  -->
-
+ 
 <header>
-
-    <div id="menu" class="fas fa-bars" style="position: fixed;"></div>
-
-    <nav class="navbar">
-        <a href="index.html">home</a>
-        <a href="#about">about</a>
-        <a href="myservices.html">services</a>
-        <a href="#portfolio">Socials</a>
-        <a href="contact.html">contact</a>
-    </nav>
-
-    <div id="theme-toggler" class="fas fa-moon"></div>
-
-</header>
-<section class="about" id="about">
-
-    <h1 class="heading"> about <span>me</span> </h1>
-
-    <div class="row">
-
-        <div class="box">
-            <h3 class="title">Professional Skills</h3>
-            <div class="progress">
-                <h3> html <span>90%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3> css <span>60%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3> js <span>45%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
+    
+   
+          <section class="portfolio" id="portfolio" style="background-color:
+          #357e4d!important;">
+       
+         <div class="col-lg-4 mb-5 mb-lg-0" style="text-align: center;">
+            
+          <span class="indexbar"><a class="btns" href="#home">HOME</a></span>
+          <span class="indexbar"><a class="btns" href="about.html">ABOUT</a></span>
+          <span class="indexbar"><a class="btns" href="myservices.html">MY_SERVICES</a></span>
+         <span class="indexbar"><a class="btns " href="contact.html">CONTACT</a></span>  
+            
         </div>
-
-        <div class="box">
-            <h3 class="title">Coding Skills</h3>
-            <div class="progress">
-                <h3> C <span>70%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3> C++<span>60%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3> JAVA <span>40%</span> </h3>
-                <div class="bar"><span></span></div>
-            </div>
-             </div>
-
-        <div class="box">
-            <h3 class="title">Education</h3>
-            <div class="exp-box">
-                <h3>Secondary School Certificate (SSC)</h3>
-                <p>Completed SSC through,<br>
-                 SARDAR VALLABHBHAI PATEL VIDYALAYA (MIRA ROAD)</p>
-            </div>
-            <div class="exp-box">
-                <h3>Higher Secondary Certificate (HSC)</h3>
-                <p>Completed HSC through, <br>
-                THAKUR COLLEGE OF SCIENCE AND COMMERCE (KANDIWALI)</p>
-            </div>
-            <div class="exp-box">
-                <h3>GRADUATION (BCA professional course)</h3>
-                <p>Studying at K.P.B Hinduja College of Commerce (CHARNI)</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="download" style="text-align: center;min-height: 15vh;">
-        <a href="https://docs.google.com/document/d/1EKgJgo1e2p0IiqZZgu09j-ZFqOM_uVrs/edit?usp=sharing&ouid=112000039197361037437&rtpof=true&sd=true" target="_blank" class="btn"> Download CV </a>
-    </div>
-
-
-
+    
 </section>
 
+
+    <div id="theme-toggler-2" class="fas fa-moon"></div>
+
+</header>
+
 <!-- header section ends -->
-<section class="portfolio" id="portfolio">
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="animate__animated animate__lightSpeedInLeft" id="image">
+      <img src="diamond-removebg-preview.png"  alt="">
+    </div>
+
+    <div class="content">
+        <span class="hello">hey</span>
+        <h3> I'M<span> </span>ABHIJEET PANDEY </h3>
+        <p>I am a student of professional course named B.C.A. 
+            I have good hands in coding with C,C++ and Java,
+            also i am good in web development skills using HTML,CSS & JAVASCRIPT. 
+            </p>
+            <p style="color: #d98082;"><b>• FOR MORE INFO VISIT BELOW.</b></p>
+        <a href="about.html" class="btn">about me</a>
+    </div>
+
+</section>>
+
+<section class="portfolio" id="portfolio" style=" min-height: 30vh;">
 
 
     <h1 class="heading"> <span>QUICK LINKS TO</span> 
@@ -117,9 +87,6 @@
         </div>
    
 </section>
-
-<!-- contact section ends -->
-
 <!-- footer section  -->
 
 <div class="footer"><b>&copy <span>ABHIJEET PANDEY  </span> | all rights reserved!</b></div>
@@ -151,6 +118,16 @@
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
+<script>
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+$(window).on('load',function(){
+    $("preloader").fadeout("slow");
+})
+</script>
 
 </body>
 </html>

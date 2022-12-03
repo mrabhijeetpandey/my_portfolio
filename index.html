@@ -10,7 +10,13 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   
     
+
+
     <a href="about.html"></a>
 <a href="index.html"></a>
 <a href="myservices.html"></a>
@@ -19,22 +25,26 @@
 
 </head>
 <body>
-   
-<!-- header section starts  -->
-
+ 
 <header>
+    
+   
+          <section class="portfolio" id="portfolio" style="background-color:
+          #357e4d!important;">
+       
+         <div class="col-lg-4 mb-5 mb-lg-0" style="text-align: center;">
+            
+          <span class="indexbar"><a class="btns" href="#home">HOME</a></span>
+          <span class="indexbar"><a class="btns" href="about.html">ABOUT</a></span>
+          <span class="indexbar"><a class="btns" href="myservices.html">MY_SERVICES</a></span>
+         <span class="indexbar"><a class="btns " href="contact.html">CONTACT</a></span>  
+            
+        </div>
+    
+</section>
 
-    <div id="menu" class="fas fa-bars" style="position: fixed;"></div>
 
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="about.html">about</a>
-        <a href="myservices.html">services</a>
-        <a href="#portfolio">Socials</a>
-        <a href="contact.html">contact</a>
-    </nav>
-
-    <div id="theme-toggler" class="fas fa-moon"></div>
+    <div id="theme-toggler-2" class="fas fa-moon"></div>
 
 </header>
 
@@ -44,39 +54,25 @@
 
 <section class="home" id="home">
 
-    <div class="image">
-        <img src="diamond-removebg-preview.png" alt="">
+    <div class="animate__animated animate__lightSpeedInLeft" id="image">
+      <img src="diamond-removebg-preview.png"  alt="">
     </div>
 
     <div class="content">
         <span class="hello">hey</span>
         <h3> I'M<span> </span>ABHIJEET PANDEY </h3>
         <p>I am a student of professional course named B.C.A. 
-            I have good hands in coding with C ,C++ and Java,
+            I have good hands in coding with C,C++ and Java,
             also i am good in web development skills using HTML,CSS & JAVASCRIPT. 
-        To know more about me visit below.</p>
+            </p>
+            <p style="color: #d98082;"><b>• FOR MORE INFO VISIT BELOW.</b></p>
         <a href="about.html" class="btn">about me</a>
     </div>
 
 </section>>
 
-<!-- service section starts  -->
+<section class="portfolio" id="portfolio" style=" min-height: 30vh;">
 
-
-
-<!-- service section ends -->
-
-<!-- portfolio section starts  -->
-
-
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts  -->
-
-
-
-<section class="portfolio" id="portfolio">
 
     <h1 class="heading"> <span>QUICK LINKS TO</span> 
         SOCIAL MEDIA</h1>
@@ -91,9 +87,6 @@
         </div>
    
 </section>
-
-<!-- contact section ends -->
-
 <!-- footer section  -->
 
 <div class="footer"><b>&copy <span>ABHIJEET PANDEY  </span> | all rights reserved!</b></div>
@@ -125,6 +118,16 @@
 
 <!-- custom js file link  -->
 <script src="script.js"></script>
+<script>
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+$(window).on('load',function(){
+    $("preloader").fadeout("slow");
+})
+</script>
 
 </body>
 </html>
